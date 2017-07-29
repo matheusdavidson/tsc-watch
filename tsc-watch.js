@@ -91,7 +91,7 @@ if (onFirstSuccessCommandIdx > -1) {
 }
 
 let args = cleanArgs(allArgs);
-args.push('--watch'); // force watch
+// args.push('--watch'); // force watch
 
 const bin = require.resolve('typescript/bin/tsc');
 const tscProcess = spawn(bin, [...args]);
